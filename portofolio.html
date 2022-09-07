@@ -6,205 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Zulfa Fakaha</title>
 
+    
     <!--LINK UNTUK FONT DI GOOGLE-->
    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
    <!--LINK MENUJU CSS BOOTSTRAP-->
     <link rel="stylesheet" type="text/css" href="../pertemuan4/bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <!--LINK MENUJU JAVASCRIPT BOOTSTRAP-->
     <script type="text/javascript" src="../pertemuan4/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
-
-    <style>
-        body{
-            background-color: #5e72e4;
-        }
-        .nama{
-            font-family: 'Ultra', serif;
-            letter-spacing: 2px;
-            font-size: 20px;
-            color: white;
-        }
-        .navbar{
-            background-color: #32325d;
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 99999;
-            opacity: 0.8;
-        }
-        .navigasi a:hover{
-            color:white;
-           
-        }
-        
-        h2{
-            background-color:#9598a5;
-        }
-        
-        .intro{
-            color: #000000;
-        }
-        
-        /* .fotoformal{
-            width: 250px;
-            height: 250px;
-            border-radius: 100%;
-            border:grey solid 5px; 
-        } */
-        
-        .link{
-            text-decoration: none;
-            color: white;
-        }
-        .kiri{
-            background-color:#b9c5f5;
-        }
-        
-        .infokontak a{
-            text-decoration: none;
-        }
-        .infokontak a:hover{
-            font-size: 102%;
-            color: red;
-        }
-        .penutupgallery {
     
-    background-color: white;
-    margin: auto;
-    padding: 30px;
-    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-}
-.gallery li {
-    width: 200px;
-    height: 200px;
-    /* overflow: hidden; */
-    border: 5px solid #666;
-    float: left;
-    margin-right: 10px;
-    position: relative;
-}
-.gallery li,
-.gallery li span,
-.gallery li img {
-    border-radius: 50%;
-}
-.gallery li span {
-    display: block;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(200, 200, 200, 0.5);
-    position: absolute;
-    top: 0;
-    text-align: center;
-    line-height: 40px;
-    color: red;
-    text-shadow: 1px 1px 1px #ddd;
-    opacity: 0;
-    transform: scale(0) rotate(0);
-    transition: .3s;
-}
-ul{
-    list-style: none;
-}
-.gallery li a:hover span {
-    opacity: 1;
-    transform: scale(1) rotate(360deg);
-}
-.overlay{
-    width: 0;
-    height: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0);
-    z-index: 99;
-    transition: .8s;
-    text-align: center;
-    padding: 100px 0;
-}
+    <!--LINK UNTUK CSS-->
+    <link rel="stylesheet" href="style.css">
 
-.overlay:target{
-    width: auto;
-    height: auto;
-    bottom: 0;
-    right: 0;
-    background: rgba(0, 0, 0, .5);
-    
-}
-.overlay img{
-    max-height: 100%;
-    width: 60vw;
-    
-}
-
-.overlay:target img{
-    
-    animation: zoomgambar 1s;
-}
-.overlay .close{
-    position: absolute;
-    top: 70px;
-    left: 50%;
-    margin-left: -20px;
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    border: 1px solid white;
-    line-height: 14px;
-    padding: 5px;
-    opacity: 0;
-}
-
-.overlay:target .close{
-    animation: closebutton .5s .5s forwards;
-}
-
-@keyframes zoomgambar{
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
-@keyframes closebutton{
-    0%{
-        opacity: 0;
-        margin-top: -20px;
-    }
-    100%{
-        opacity: 1;
-        margin-top: 0;
-    }
-}
-
-        .gambar{
-            background-color: whitesmoke;
-        }
-        .gambar img{
-            width: 210px;
-            height: 220px;
-            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-            gap: 5px;
-        }
-        .footer {
-            
-             background-color: rgb(214, 211, 211);
-             padding: 10px;     
-        }
-        .footer .copyright{
-            color:#8898aa;
-            font-size: 1.2rem;
-              
-        }
-        .clear {
-            clear:both
-        }
-       
-    </style>
 
 </head>
 <body>
@@ -307,23 +119,6 @@ ul{
         </div>
     </section>
     <hr>
-    <!--
-        <section class="gambar mt-5 pt-2 pb-3">
-            <h2 class="text-center">Gallery</h2>
-            <img class="col" src="code1.JPG">
-            <img class="col" src="code2.JPG">
-            <img class="col" src="code3.JPG">
-            <img class="col" src="code4.JPG">
-            <img class="col" src="code5.JPG">
-            <img class="col" src="code6.JPG">
-            <img class="col" src="code7.JPG">
-            <img class="col" src="code8.JPG">
-            <img class="col" src="code9.JPG">
-            <img class="col" src="code10.JPG">
-            <img class="col" src="code11.JPG">
-            <img class="col" src="code12.JPG">       
-        </section>    
-    -->
 
     <div class="penutupgalerry" id="gallery">
         <h2 class="text-center">GALLERY CODE 2022</h2>
